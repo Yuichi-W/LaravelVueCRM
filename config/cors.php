@@ -15,6 +15,9 @@ return [
     |
     */
 
+    // graphqlを追加
+    'paths' => ['api/*', 'sanctum/csrf-cookie', 'graphql'],
+
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
     'allowed_methods' => ['*'],
