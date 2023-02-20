@@ -60,6 +60,8 @@ class InertiaTestController extends Controller
         $blog->delete();
 
         return to_route('inertia.index')
-            ->with(['message' => '削除しました']);
+            ->with([
+                'message' => '削除しました',
+            ]);
     }
 }

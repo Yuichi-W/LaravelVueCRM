@@ -14,8 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call([
+            UserSeeder::class,
+            ItemSeeder::class,
+        ]);
         // \App\Models\User::factory(10)->create();
-        \App\Models\Post::factory(50)->create(); // 追加
+        // \App\Models\Post::factory(50)->create(); // 追加
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
